@@ -37,18 +37,18 @@ def app():
 
     with utils.TempDirContext(temp_dir):
         st.set_page_config(
-            page_title="ChatGPT Code Review",
+            page_title="Auto Code Review",
         )
 
         session_state = st.session_state
 
-        st.title("ChatGPT Code Review :rocket:")
+        st.title("Auto Code Review :rocket:")
 
-        with st.expander("About ChatGPT Code Review"):
+        with st.expander("About this Project"):
             st.markdown(about.about_section, unsafe_allow_html=True)
             st.write("")
 
-        default_repo_url = "https://github.com/domvwt/chatgpt-code-review"
+        default_repo_url = "https://github.com/dakohhh/CAMP-TOKEN"
         repo_form = forms.RepoForm(default_repo_url, localserver=LOCAL_SERVER_ENDPOINT)
         with st.form("repo_url_form"):
             repo_form.display_form()
