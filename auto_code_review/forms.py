@@ -2,10 +2,10 @@ import logging
 import os
 
 import openai
-import repo
+from . import repo
 import streamlit as st
 from streamlit_tree_select import tree_select
-from utils import EXTENSION_TO_LANGUAGE_MAP
+from .utils import EXTENSION_TO_LANGUAGE_MAP
 
 
 class RepoForm:

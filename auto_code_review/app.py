@@ -1,14 +1,14 @@
 import os
 import sys
 
-import about
-import display
-import download
-import forms
-import query
-import repo
+from . import  about
+from .import  display
+from . import download
+from . import forms
+from . import query
+from . import repo
 import streamlit as st
-import utils
+from . import utils
 
 env_file_path = ".env"
 log_file = "app.log"

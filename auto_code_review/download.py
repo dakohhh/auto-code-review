@@ -1,4 +1,4 @@
-import display
+from . import display
 import streamlit as st
 
 
